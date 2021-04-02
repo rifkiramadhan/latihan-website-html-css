@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<body>
+<style>
+    /* CSS Grid adalah sebuah modul css yang baru untuk mendefinisikan sistem
+    layout berbentuk grid dalam 2 dimensi (baris & kolom). */
+
+    /* 
+    Grid Container, Elemen pembungkus grid, didefinisikan dengan menuliskan 
+    display: grid;
+    Terminologi
+
+    Grid Item, Element2 yang berada (1level) di dalam grid container
+
+    Grid Line, Garis horizontal (kolom) atau vertikal (baris) yang memisahkan
+    grid menjadi beberapa bagian dan ditandai dengan angka
+
+    Grid Cell, Perpotongan/pertemuan antara baris dan kolom di dalam grid
+
+    Grid Area, Kumpulan lebih dari satu grid cell yang membentuk kotak
+
+    Grid Track, Ukuran/jarak antara 2 grid line, bisa horizontal (kolom) atau
+    vertikal (baris)
+
+    Grid Gap, Jarak antar grid track/cell
+     */
+
+    /* grid-template-columns & grid-template-rows, Mendefinisikan kolom/baris dengan cara
+        menuliskan nilai dipisahkan oleh spasi. Nilai merepresentasikan ukuran grid trck
+        dan spasi merepresentasikan grid line 
+        <track-size>, bisa berupa px, %, auto atau fr (fraction)
+        <line-name>, nama yang bisa diberikan pada track
+
+        grid-auto-columns & grid-auto-rows, mengatur ukuran grid track yang tidak dituliskan
+        pada grid-template (implicit track)
+
+        grid-auto-flow, Mengatur penempatan item/cell pada grid track, termasuk yang ditulis
+        secara implicit
+     */
+
+    body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    }
+
+    .container {
+        width: 600px;
+        margin: 50px auto;
+        border: 5px solid #333;
+        box-sizing: border-box;
+        padding: 5px;
+        display: grid;
+        grid-template-areas: "header header"
+                             "aside main"
+                             "nav main"
+                             "footer footer";
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 1fr 1fr 1.3fr;
+    }
+
+    header {
+        grid-area: header;
+        background-color: #b063d8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside {
+        grid-area: aside;
+        background-color: #2F93FF;
+        padding: 60px 0;
+    }
+
+    nav {
+        grid-area: nav;
+        background-color: #E45765;
+        padding: 100px 0;
+    }
+
+    main {
+        grid-area: main;
+        background-color: #E0AA77;
+        box-sizing: border-box;
+        flex: 1.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: #666;
+        padding: 20px 0;
+    }
+</style>
+    
+    <div class="container">
+        <header>Header</header>
+            <aside>Aside</aside>
+            <nav>Nav</nav>
+            <main>Main</main>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

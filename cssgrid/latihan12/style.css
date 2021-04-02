@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 130px 130px 130px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    justify-items: start;
+}
+
+.items {
+    border: 3px solid black;
+    height: 100px;
+    background-color: lightblue;
+}
+
+.items.i1,
+.items.i4,
+.items.i7 {
+    width: 130px;
+}
+
+.items.i2,
+.items.i5,
+.items.i8 {
+    width: 80px;
+}
+
+.items.i3,
+.items.i6,
+.items.i9 {
+    width: 170px;
+}

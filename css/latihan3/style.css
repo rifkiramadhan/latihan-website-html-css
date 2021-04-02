@@ -1,0 +1,17 @@
+/* Belajar mengenai text styling */
+
+h1 {
+    color: rgb(115,80,212);
+    font-size: 150px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+p {
+    text-indent: 100px;
+}
+
+a {
+    text-decoration: none;
+}

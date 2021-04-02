@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 80%;
+    height: 700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 120px 180px 120px;
+    grid-template-rows: 80px 80px;
+    gap: 5px;
+    /* align-content: start; */
+    /* align-content: end; */
+    /* align-content: center; */
+    /* align-content: stretch; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    align-content: space-evenly;
+  }
+
+  .items {
+    width: 100px;
+    height: 50px;
+    border: 3px solid black;
+    background-color: lightblue;
+    justify-content: end;
+  }

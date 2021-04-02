@@ -1,0 +1,19 @@
+div {
+    width: 300px;
+    height: 300px;
+    background-color: salmon;
+    border-radius: 50%;
+    /* background-image: url(./img/images.jfif);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%; */
+    /* border-radius: 50%; */
+    text-align: center;
+    line-height: 300px;
+    overflow: hidden;
+}
+
+div img {
+    width: 300px;
+}

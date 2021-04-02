@@ -1,0 +1,36 @@
+body {
+    height: 2000px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.satu {
+    background-color: lightgreen;
+}
+
+/* Penggunaan filxed elemen */
+/* Value defaultnya adalah staic */
+.dua {
+    background-color: violet;
+    /* position: relative; */
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+.tiga {
+    background-color: gold;
+}
+
+.container {
+    width: 600px;
+    height: 650px;
+    border: 10px solid green;
+    position: relative;
+}

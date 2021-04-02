@@ -1,0 +1,29 @@
+/* div {
+    width: 185px;
+    height: 200px;
+    background-color: coral;
+    margin: 20px auto;
+    padding: 50px;
+    border-left: 5px double black;
+    border-right: 5px dashed blue;
+} */
+
+
+/* Menggunakan box-sizing agar ukuran kedua box sejajar */
+div {
+    width: 600px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.satu {
+    background-color: royalblue;
+    padding: 15px;
+    border: 5px solid red;
+}
+
+.dua {
+    background-color: lightgreen;
+    padding: 10px;
+    border: 10px dashed orange;
+}

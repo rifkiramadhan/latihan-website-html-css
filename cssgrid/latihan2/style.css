@@ -1,0 +1,32 @@
+/* .container {
+    width: 600px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 25% auto 50px;
+    grid-template-rows: 50px 100px auto;
+} */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 66%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 25% auto 50px;
+    grid-template-rows: 50px 100px auto;
+}
+
+.item {
+    background-color: rgb(138, 289, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+}

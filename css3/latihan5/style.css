@@ -1,0 +1,8 @@
+h1 {
+    font-size: 100px;
+    font-family: arial;
+    text-align: center;
+    /* text-shadow: 5px 5px 10px green, -5px -5px 10px red; */
+    color: white;
+    text-shadow: 0 2px 1px black;
+}

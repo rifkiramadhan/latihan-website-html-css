@@ -1,0 +1,44 @@
+/* Flexbox Layout Module
+    Adalah sebuah modul yang menawarkan cara yang efektif 
+    untuk menyusun, mensejajarkan dan mendistribusikan
+    jarak antar item di dalam sebuah container, meskipun
+    ukurannya dinamis atau bahkan kita tidak tau.
+*/
+
+.container {
+    width: 600px;
+    height: 150px;
+    border: 5px solid #333;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
+    /* align-items: flex-start; */
+}
+
+.container div {
+    background-color: lightblue;
+    margin: 2px;
+    flex: 1;
+}
+
+.container div.dua {
+    flex: 2;
+    align-self: center;
+}
+
+/* .satu {
+    order: 3;
+} */
+
+
+/* Clear */
+/* .container::after {
+    content: '';
+    display: block;
+    clear: both;
+} */
+

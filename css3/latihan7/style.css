@@ -1,0 +1,27 @@
+/* Gunakanlah fontface sesuai kebutuhan */
+
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('./font/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('./font/alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('./font/OpenSans-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    font-family: "alex_brushregular", arial;
+
+    /* Menggunakan Google Fonts */
+    /* font-family: "Arial Narrow", arial, sans-serif;
+    font-family: 'Lobster', cursive; */
+}

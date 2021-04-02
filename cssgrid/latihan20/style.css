@@ -1,0 +1,44 @@
+html,
+body {
+        margin: 0;
+        padding: 0;
+        background-color: #ddd;
+      }
+
+      .container {
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+        grid-template-rows: repeat(3, 100px);
+        grid-template-areas:
+          'header header header'
+          'sidebar content content'
+          'footer footer footer';
+      }
+
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: lightblue;
+      }
+
+      .sidebar {
+        grid-area: content;
+        background-color: salmon;
+      }
+
+      .content {
+        grid-area: sidebar;
+        background-color: lightgreen;
+      }
+
+      .footer {
+        grid-area: footer;
+        background-color: silver;
+      }

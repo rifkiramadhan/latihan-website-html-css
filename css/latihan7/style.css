@@ -1,0 +1,39 @@
+/* Setiap elemen yang memiliki beban, maka elemen yang memiliki beban lebih berat elemen itu dianggap spesifik
+    atau terpilih */
+
+.hello:link {
+    color: orange;
+}
+    
+.hello:hover {
+    color: green;
+    font-family: arial;
+    font-size: 50px;
+}
+    
+.hello:active {
+    font-style: italic;
+}
+    
+.hello:visited {
+    color: red;
+}
+
+/* #p tidak terpilih */
+#p {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+ul#sarapan li {
+    color: green;
+}
+
+/* .favorite terpilih jika ditambahkan ul#sarapan li*/
+ul#sarapan li.favorite {
+    color: black;
+}
+

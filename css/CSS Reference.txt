@@ -1,0 +1,6 @@
+Link untuk melihat property css :
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+http://css-tricks.com/almanac
+
+Kalkulator untuk menghitung specificity :
+http://specificity.keegan.st

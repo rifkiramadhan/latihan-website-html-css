@@ -1,0 +1,30 @@
+body {
+    height: 2000;
+}
+
+.kotak {
+    /* height: 50px; */
+    /* width: 100%; */
+    background-color: black;
+    position: fixed;
+    top: 100px;
+    bottom: 100px;
+    left: 100px;
+    right: 100px;
+    opacity: 0.7;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+.close {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}

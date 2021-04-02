@@ -1,0 +1,23 @@
+div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.satu {
+    background-color: salmon;
+    z-index: 1;
+}
+
+.dua {
+    background-color: lightgreen;
+    top: 100px;
+    left: 100px;
+    z-index: -9999;
+}
+
+.tiga {
+    background-color: royalblue;
+    top: 200px;
+    left: 200px;
+}

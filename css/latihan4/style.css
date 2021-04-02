@@ -1,0 +1,11 @@
+h1 {
+    color: white;
+    text-align: center;
+}
+
+body { 
+    background-color: lightblue;
+    background-image: url(./img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}

@@ -1,0 +1,31 @@
+html,
+body {
+        margin: 0;
+        padding: 0;
+        background-color: #ddd;
+      }
+
+      .container {
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+        grid-template-rows: repeat(3, 100px);
+      }
+
+      .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .my-item {
+        /* grid-row-start: 2;
+        grid-column-start: 1;
+        grid-row-end: 4;
+        grid-column-end: 3; */
+
+        grid-area: 2 / 1 / 4 / 3;
+
+        background-color: lightblue;
+      }

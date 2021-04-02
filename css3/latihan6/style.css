@@ -1,0 +1,24 @@
+/* Linear & Radial gradients */
+div {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    /* background-color: salmon; */
+
+    /* Menggunakan <Nilai+deg> untuk memberikan warna sudut */
+    /* background-image: linear-gradient(red, #f0d606, rgba(255, 255, 0, 1), green); */
+
+    /* Menggunakan to bottom, top, left, right, left top, left bottom, right top, right bottom untuk penyesuaian arah */
+    /* Menggunkan color stop untuk mengatur bobot dari gradasi warna yang lurus*/
+    /* background-image: linear-gradient(to right, red 63%, green 80%); */
+
+    /* closest-corner, jarak dari pusat gradient ke sudut terdekat elemen
+       closest-side, jarak dari pusat gradient ke sisi terdekat elemen
+       farthest-corner, jarak dari pusat gradient ke sudut terjauh
+       farthest-side, jarak dari pusat gradient ke sisi terjauh elemen
+    */
+    /* Tipe nya elipse & circle, jika default maka tipenya elipse */
+    /* background-image: radial-gradient(circle closest-side, red, blue); */
+    
+    background-image: radial-gradient(circle farthest-side at top left, red, blue);
+}

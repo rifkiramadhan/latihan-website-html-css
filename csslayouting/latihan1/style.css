@@ -1,0 +1,35 @@
+/* .navigasi { 
+    background-color: pink;
+}
+
+.main span {
+    background-color: lightblue;
+} */
+
+a {
+    background-color: pink;
+    /* width: 200px;
+    height: 200px;
+    display: inline-block; */
+}
+
+h1, h2, p {
+    background-color: lightgreen;
+}
+
+.main {
+    background-color: lightgreen;
+    width: 600px;
+}
+
+.main h2 {
+    background-color: lightblue;
+}
+
+img { 
+    display: none;
+}
+
+.navigasi li {
+    display: inline;
+}

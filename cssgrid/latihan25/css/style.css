@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+section img {
+    width: 50px;
+}
+
+body {
+    background-color: #ddd;
+    font-size: 18px;
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+
+/* Container */
+.container {
+    display: grid;
+    gap: 10px;
+    background-color: #aaa;
+    border-radius: 5px;
+}
+
+/* Header */
+.header {
+    display: grid;
+    grid-template-areas: 
+    'hero hero feature-1'
+    'hero hero feature-2';
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 300px;
+    background-image: url(../img/lsnc.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.hero > * {
+    display: none;
+}
+
+.features {
+    background-color: #000;
+    color: white;
+    display: grid;
+    /* justify-content: center;
+    align-content: center; */
+    place-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.feature-1 {
+    grid-area: feature-1;
+    background-image: url( ../img/guild.jpg);
+    background-size: cover;
+}
+
+.feature-2 {
+    grid-area: feature-2;
+    background-image: url(../img/lost-saga-remastered.jpeg);
+    background-size: cover;
+}
+
+.features .price {
+    font-size: 3em;
+    font-weight: 200;
+}
+
+div header div form button {
+    font-family: sans-serif;
+    font-size: 15px;
+    background: orange;
+    color: white;
+    border: white 3px solid;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+div header div form button:hover {
+    opacity:0.9;
+}
+
+/* Navigation */
+.menu {
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.menu .brand {
+    font-size: 1.3em;
+    color: #333;
+}
+
+.menu ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+}
+
+.menu a {
+    display: block;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.menu-list a:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    background-color: white;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* Services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.service {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.service .icon {
+    font-size: 3em;
+}
+
+.service h3 {
+    font-size: 1.5em;
+}
+
+.service p {
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+}
+
+.service p a {
+    text-decoration: none;
+    color: black;
+}
+
+.gallery img {
+    width: 300px;
+}
+
+/* Gallery */
+.gallery {
+    margin-top: 100px;
+    display: flex grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+}
+
+.gallery h2 {
+    /* grid-row-start: 1;
+    grid-column-end: -1; */
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #000;
+    padding: 10px;
+}
+
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 1024px) {
+    .menu {
+        order: inherit;
+        grid-template-columns: 1fr;
+    }
+
+    .menu .brand {
+        display: none;
+    }
+
+    .hero > * {
+        display: block;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        order: -1;
+        justify-items: end;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu ul {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: #000;
+        z-index: 1;
+        transform: translateY(-100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    .menu ul.slide {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 15px;
+    }
+
+    .header {
+        grid-template-areas: 
+        'hero'
+        'feature-1'
+        'feature-2';
+    }
+}

@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+}
+
+/* img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+} */
+
+/* Filter
+    blur
+    brightness(angka | %)
+    contrast(angka | %)
+    saturate(angka | %)
+    grascale(angka | %)
+    sepia(angka | %)
+    hue-rarate(deg)
+    invert(angka | %)
+    opacity(angka | %)
+    drop_shadow(sama seperti box-shadow)
+*/
+
+h1 {
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+img {
+    filter: drop-shadow(5px 5px 5px black) blur(10px) grayscale(1);
+    transition: 1s;
+}
+
+img:hover {
+    filter: blur(0) grayscale(0);
+}
